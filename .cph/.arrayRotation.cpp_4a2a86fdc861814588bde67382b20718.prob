@@ -1,0 +1,1 @@
+{"name":"Local: arrayRotation","url":"d:\\C\\C plus plus\\GFG\\arrayRotation.cpp","tests":[{"id":1650303624477,"input":"1\n10 3\n2 4 6 8 10 12 14 16 18 20","output":"8 10 12 14 16 18 20 2 4 6"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\C\\C plus plus\\GFG\\arrayRotation.cpp","group":"local","local":true}
