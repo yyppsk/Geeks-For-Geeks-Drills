@@ -8,9 +8,17 @@ void solve()
 }
 int main()
 {
-    int n = 100;
-    for (int i = 1; i < 11; i++)
-        for (int j = 1; j < 10; j++)
-            printf("%d * %d = %d\n", i, j, i * j);
+    int A = 1, B = 3;
+    int x = A;
+    int count = 0;
+    while (--B)
+    {
+        if (x % 2 == 0)
+            x = x / 2;
+        else
+            x = (x * 3) + 1;
+        cout << x << ">";
+    }
+    cout << x;
     return 0;
 }
