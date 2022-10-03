@@ -33,9 +33,8 @@ void leftRotate(int arr[], int k, int n)
 }
 int main()
 {
-    int N = 6, K = 2, arr[] = {1, 2, 3, 4, 5, 6};
+    int N = 7, K = 2, arr[] = {1, 2, 3, 4, 5, 6, 7};
     // 3 4 5 6 7 1 2
     leftRotate(arr, K, N);
-    arr[i][front] = !arr[i][front];
     return 0;
 }
