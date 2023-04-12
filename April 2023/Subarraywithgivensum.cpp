@@ -5,15 +5,31 @@
 using namespace std;
 vector<int> subarraySum(vector<int> arr, int n, long long s)
 {
-    int start = 0, end = 1;
-    int sum = 0;
-    while (end <= n)
+    int start = 0, runner = 0;
+    int sum = arr[0];
+    while (runner < n)
     {
-        sum += arr[start] + arr[end];
-        cout << sum << endl;
-        end++;
+        if (sum == s)
+        {
+            return {start + 1, runner + 1};
+        }
+        else if (sum < s || start == runner)
+        {
+            if (runner == n - 1)
+                break;
+            runner++;
+            sum = sum + arr[runner];
+
+            // cout<<"sum < s "<<sum<<endl;
+        }
+        else if (sum > s)
+        {
+            sum = sum - arr[start];
+            start++;
+            // cout<<"sum > s "<<sum<<endl;
+        }
     }
-    return {start, end};
+    return {-1};
 }
 int main()
 {
