@@ -1,0 +1,1 @@
+visited[newX][newY] = true;
